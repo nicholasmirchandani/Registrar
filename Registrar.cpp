@@ -122,6 +122,7 @@ void Registrar::prepareCalculations() {
         waitTimes[i] = temp->getWaitTime();
         delete(temp);   //Memory cleanup
     }
+    std::sort(waitTimes, waitTimes + numStudents);
     for(int i = 0; i < numWindows; ++i) {   //Initialize idleTimes
         idleTimes[i] = windows[i].getIdleTime();
     }
