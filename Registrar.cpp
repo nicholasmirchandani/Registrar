@@ -9,6 +9,7 @@ Registrar.cpp is the core implementation of a registrar, handling update logic a
 */
 
 #include "Registrar.h"
+#include <algorithm> //For std::sort
 
 /*
     Default Constructor: dynamically allocates memory and initializes variables as needed
